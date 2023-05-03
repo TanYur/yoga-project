@@ -1,0 +1,60 @@
+.card-none{
+    display: none;
+}
+
+@media(max-width:1200px) {
+    .wrapper {
+        width: 1000px;
+        height: 300px;
+    }
+    .slider {
+        width: 770px;     
+    }
+
+    .item-active { 
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-description {
+        width: 250px;
+        height: 30px;
+    }
+
+}
+
+@media(max-width:1010px) {
+    .wrapper {
+        width: 760px;
+        height: auto;
+    }
+
+    /* .card-item:nth-child(3) {
+        display: none;    
+    }     */
+
+    .card-item{
+        height: 330px;
+    }
+
+    .item-active {
+        width: 290px;
+        height: 290px;
+    } 
+
+    .card-description {
+        width: 290px;
+        height: 30px;
+    }
+}
+@media(max-width:767px) {
+    
+    /* .card-item:nth-child(2) {
+        display: none;    
+    }  */
+}
+
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider_07</title>
+    <link rel="stylesheet" href="./disc/style/style_yoga.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+
+    </style>
+
+    <div class="container">
+        <h2>yoga</h2>
+        <div class="wrapper">
+
+            <div class="btn-container-prev">
+                <button class="btn btn-arrow btn-prev">
+                    &#9668;
+                </button>
+                <button class="btn btn-start">First item</button>
+            </div>
+
+            <div id="slider" class="slider">
+                <div class="card-item">
+                    <div class="item item-01 ">1 </div>
+                    <div class="card-description">посмотреть описание &#9658;</div>
+                </div>
+                <div class="card-item">
+                    <div class="item item-02 ">2</div>
+                    <div class="card-description">посмотреть описание &#9658;</div>
+                </div>
+                <div class="card-item">
+                    <div class="item item-03 ">29</div>
+                    <div class="card-description">посмотреть описание &#9658;</div>
+                </div>
+            </div>
+
+            <div class="btn-container-next">
+                <button class="btn btn-arrow btn-next">
+                    &#9658;
+                </button>
+                <button class="btn btn-end">Last item</button>
+            </div>
+
+        </div>
+
+        <div class="btn-container">
+            <div class="set-time">
+                <div class="btn-time">
+                    <div class="time">
+                        <p class="time-text">minutes</p>
+                        <input class="btn input-time minutes" type="number" value="0" min="0" max="60">
+                    </div>
+                    <div class="time">
+                        <p class="time-text">seconds</p>
+                        <input class="btn input-time seconds" type="number" value="1" min="0" max="59">
+                    </div>
+                </div>
+            </div>
+            <div class="btn-move-img">
+                <button class="btn btn-play" onfocus="this.className='focus btn-play'"
+                    onblur="this.className='btn btn-play'">Play</button>
+                <button class="btn btn-stop" onfocus="this.className='focus btn-stop'"
+                    onblur="this.className='btn btn-stop'">Stop</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./disc/script/data.js"></script>
+    <script src="./disc/script/rwd.js"></script>
+    <script src="./disc/script/script.js"></script>
+    <script src="./disc/script/script-card-rotate.js"></script>
+
+
+</body>
+
+</html>
