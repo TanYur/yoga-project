@@ -118,6 +118,7 @@ var endButton = document.querySelector('.btn-end');
 startButton.onclick = function () {
     let items = [...slides];
     items.forEach((e, i) => {
+        e.classList.remove('mirror');
         e.style.backgroundImage = yogaData[+arrNumberCardIs[0 + i]].image;
         e.innerHTML = +arrNumberCardIs[0 + i];
     });
@@ -128,7 +129,7 @@ endButton.onclick = function () {
     let items = Array.from(slides);
 
     for (let i = 0, j = numberSliderActive - 1; i < numberSliderActive; i++, j--) {
-
+        items[i].classList.remove('mirror');
         items[i].style.backgroundImage = yogaData[+arrNumberCardIs[arrNumberCardIs.length - 1 - j]].image;
         items[i].innerHTML = +arrNumberCardIs[arrNumberCardIs.length - 1 - j];
     }
